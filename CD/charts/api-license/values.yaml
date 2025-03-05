@@ -1,0 +1,10 @@
+NameSpace: karned
+AppName: api-recipe
+
+Replicas: 1
+Port: 8000
+
+DockerImage: killiankopp/api-recipe:1.0.1
+
+API_NAME: api-license
+API_TAG_NAME: license
