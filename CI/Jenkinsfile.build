@@ -31,7 +31,7 @@ spec:
     }
     environment {
         DOCKER_IMAGE = 'killiankopp/api-license'
-        URL_VERSION = 'https://raw.githubusercontent.com/karned-rekipe/api-license.k8s/main/CI/version'
+        URL_VERSION = 'https://raw.githubusercontent.com/karned-rekipe/api-license.cicd/main/CI/version'
         URL_REPO = 'https://github.com/karned-rekipe/api-license.git'
     }
     stages {
