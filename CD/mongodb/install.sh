@@ -1,0 +1,1 @@
+helm install mongodb-license bitnami/mongodb -f values.yaml -n karned
