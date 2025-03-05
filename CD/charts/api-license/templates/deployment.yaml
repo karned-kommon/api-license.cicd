@@ -63,3 +63,33 @@ spec:
               secretKeyRef:
                 name: redis-secret
                 key: REDIS_PASSWORD
+          - name: DB_HOST
+            valueFrom:
+              secretKeyRef:
+                name: mongodb-license-secret
+                key: DB_HOST
+          - name: DB_PORT
+            valueFrom:
+              secretKeyRef:
+                name: mongodb-license-secret
+                key: DB_PORT
+          - name: DB_USER
+            valueFrom:
+              secretKeyRef:
+                name: mongodb-license-secret
+                key: DB_USER
+          - name: DB_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: mongodb-license-secret
+                key: DB_PASSWORD
+          - name: DB_DATABASE
+            valueFrom:
+              secretKeyRef:
+                name: mongodb-license-secret
+                key: DB_DATABASE
+          - name: DB_COLLECTION
+            valueFrom:
+              secretKeyRef:
+                name: mongodb-license-secret
+                key: DB_COLLECTION
