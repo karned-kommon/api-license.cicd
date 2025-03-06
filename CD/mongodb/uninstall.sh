@@ -1,1 +1,0 @@
-helm uninstall mongodb-license -n karned

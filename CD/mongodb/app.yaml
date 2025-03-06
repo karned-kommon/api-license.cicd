@@ -1,0 +1,28 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: mongodb-license
+  namespace: argocd
+spec:
+  project: karned
+  source:
+    repoURL: https://charts.bitnami.com/bitnami
+    targetRevision: 13.6.5
+    chart: mongodb
+    helm:
+      valueFiles:
+        - https://raw.githubusercontent.com/karned-rekipe/api-license.cicd/refs/heads/main/CD/mongodb/values.yaml
+      values: |
+        auth:
+          existingSecret: mongodb-server-license-secret
+          usernames:
+            - admin
+          databases:
+            - rekipe
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: karned
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

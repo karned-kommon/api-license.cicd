@@ -1,4 +1,4 @@
-kubectl create secret generic mongodb-secret -n karned \
+kubectl create secret generic mongodb-license-secret -n karned \
   --from-literal=DB_HOST="your-db-host" \
   --from-literal=DB_PORT="27017" \
   --from-literal=DB_USER="your-username" \
