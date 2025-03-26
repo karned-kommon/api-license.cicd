@@ -8,4 +8,4 @@ spec:
   - port: {{ .Values.Port }}
     targetPort: 80
   selector:
-    app: {{ .Values.AppName }}-amandine
+    app: {{ .Values.AppName }}
