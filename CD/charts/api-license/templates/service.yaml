@@ -4,8 +4,9 @@ metadata:
   name: {{ .Values.AppName }}-service
   namespace: {{ .Values.NameSpace }}
 spec:
+  type: ClusterIP
   ports:
   - port: {{ .Values.Port }}
-    targetPort: 80
+    targetPort: {{ .Values.Port }}
   selector:
     app: {{ .Values.AppName }}
