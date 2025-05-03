@@ -8,3 +8,5 @@ DockerImage: killiankopp/api-license:0.1.2
 
 API_NAME: api-license
 API_TAG_NAME: license
+
+URL_API_GATEWAY: https://api.karned.bzh
