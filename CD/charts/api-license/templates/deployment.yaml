@@ -19,6 +19,8 @@ spec:
         ports:
         - containerPort: {{ .Values.Port }}
         env:
+          - name: URL_API_GATEWAY
+            value: {{ .Values.URL_API_GATEWAY }}
           - name: API_NAME
             value: {{ .Values.API_NAME }}
           - name: API_TAG_NAME
