@@ -4,7 +4,7 @@ AppName: api-license
 Replicas: 1
 Port: 8000
 
-DockerImage: killiankopp/api-license:0.1.3
+DockerImage: killiankopp/api-license:1.0.0
 
 API_NAME: api-license
 API_TAG_NAME: license
